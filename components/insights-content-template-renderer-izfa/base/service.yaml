@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: insights-content-template-renderer-izfa
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: insights-content-template-renderer-izfa
+    app.kubernetes.io/part-of: fork-insights-content-template-renderer
+  name: insights-content-template-renderer-izfa
+spec:
+  ports:
+  - port: 8000
+    targetPort: 8000
+  selector:
+    app.kubernetes.io/instance: insights-content-template-renderer-izfa
+status:
+  loadBalancer: {}
