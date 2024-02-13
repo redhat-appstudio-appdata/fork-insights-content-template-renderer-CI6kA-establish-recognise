@@ -10,7 +10,7 @@ metadata:
     app.kubernetes.io/part-of: fork-insights-content-template-renderer
   name: insights-content-template-renderer-izfa
 spec:
-  replicas: 1
+  replicas: 0
   revisionHistoryLimit: 0
   selector:
     matchLabels:
